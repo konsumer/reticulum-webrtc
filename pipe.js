@@ -15,5 +15,4 @@ ws.on('message', (data) => {
   process.stdout.write(data)
 })
 
-// TODO: close socket on exit
 // TODO: actually figure what needs to be done. Currently anything on stdin is sent to all other clients
