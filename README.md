@@ -34,3 +34,5 @@ nomadnet --config test/b/nomad --rnsconfig test/b/rns
 Now, you can send messages from A to B, or vice-versa.
 
 <img src="https://github.com/user-attachments/assets/b8f244da-0c9c-463c-85c9-1decc0ca5fe9" />
+
+You can also use my remote websocket server at `wss://signal.konsumer.workers.dev/ws/reticulum` see [signal-worker](https://github.com/konsumer/signal-worker) if you want to host your own on Cloudflare.
