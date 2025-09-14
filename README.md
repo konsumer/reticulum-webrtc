@@ -33,4 +33,5 @@ nomadnet --config test/b/nomad --rnsconfig test/b/rns
 
 Now, you can send messages from A to B, or vice-versa.
 
-<img width="1530" height="1037" alt="Screenshot 2025-09-13 at 8 12 25 PM" src="https://github.com/user-attachments/assets/030da9aa-3f0e-417e-8c57-2bff83325f77" />
+<img width="1081" height="872" alt="Screenshot 2025-09-13 at 10 41 56 PM" src="https://github.com/user-attachments/assets/b8f244da-0c9c-463c-85c9-1decc0ca5fe9" />
+
