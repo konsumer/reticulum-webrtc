@@ -8,7 +8,7 @@ This is based on [this discussion](https://github.com/markqvist/Reticulum/discus
   [[Local WebRTC Tester]]
     type = PipeInterface
     interface_enabled = True
-    command = node PATH_TO/reticulum-webrtc/pipe.js ws://0.0.0.0:8080
+    command = "node PATH_TO/reticulum-webrtc/pipe.js ws://0.0.0.0:8080"
     respawn_delay = 5
     outgoing = True
     mode = full
