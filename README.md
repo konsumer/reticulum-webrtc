@@ -24,11 +24,13 @@ npm i
 # start your webrtc server
 npm start
 
-# start a client to talk to
-nomadnet --config testn --rnsconfig testrns
+# start client A
+nomadnet --config test/a/nomad --rnsconfig test/a/rns
 
-# start your regular client (should have PipeInterface config, above)
-nomadnet
+# start client B
+nomadnet --config test/b/nomad --rnsconfig test/b/rns
 ```
+
+Now, you can send messages from A to B, or vice-versa.
 
 <img width="1530" height="1037" alt="Screenshot 2025-09-13 at 8 12 25 PM" src="https://github.com/user-attachments/assets/030da9aa-3f0e-417e-8c57-2bff83325f77" />
