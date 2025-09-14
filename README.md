@@ -16,5 +16,8 @@ This will eventually be it's own Interface (made in python) for reticulum, that 
 There is a test server:
 
 ```sh
+# install dependencies
+npm i
+
 npm start
 ```
