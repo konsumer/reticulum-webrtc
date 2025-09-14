@@ -8,7 +8,9 @@ wss.on('connection', function connection(ws) {
   ws.on('error', console.error)
 
   ws.on('message', (data) => {
-    console.error('received:', data.toString('hex'))
+    // debug what  was received
+    console.error(data.toString('hex'))
+
     wss.clients.forEach((client) => {
       if (client.readyState === WebSocket.OPEN && client != ws) {
         client.send(data, { binary: true })

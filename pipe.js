@@ -1,6 +1,8 @@
 import WebSocket from 'ws'
 
-const ws = new WebSocket('ws://0.0.0.0:8080')
+const [, , URL = 'ws://0.0.0.0:8080'] = process.argv
+
+const ws = new WebSocket(URL)
 ws.on('error', console.error)
 
 ws.on('open', () => {
