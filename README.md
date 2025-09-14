@@ -15,24 +15,29 @@ This is based on [this discussion](https://github.com/markqvist/Reticulum/discus
     announce_cap = 2.0
 ```
 
-There is a test server:
+You can use my remote websocket server at `wss://signal.konsumer.workers.dev/ws/reticulum` see [signal-worker](https://github.com/konsumer/signal-worker) if you want to host your own on Cloudflare.
 
 ```sh
 # install dependencies
 npm i
-
-# start your webrtc server
-npm start
 
 # start client A
 nomadnet --config test/a/nomad --rnsconfig test/a/rns
 
 # start client B
 nomadnet --config test/b/nomad --rnsconfig test/b/rns
+
 ```
 
 Now, you can send messages from A to B, or vice-versa.
 
 <img src="https://github.com/user-attachments/assets/b8f244da-0c9c-463c-85c9-1decc0ca5fe9" />
 
-You can also use my remote websocket server at `wss://signal.konsumer.workers.dev/ws/reticulum` see [signal-worker](https://github.com/konsumer/signal-worker) if you want to host your own on Cloudflare.
+There is also a local test server (for `ws://0.0.0.0:8080`):
+
+```sh
+# start your webrtc server
+npm start
+```
+
+But you will have to modify the config of test a/b to use `ws://0.0.0.0:8080`
