@@ -7,7 +7,7 @@ This is based on [this discussion](https://github.com/markqvist/Reticulum/discus
 ```ini
   [[Local WebRTC Tester]]
     type = PipeInterface
-    interface_enabled = True
+    enabled = True
     command = "node PATH_TO/reticulum-webrtc/pipe.js ws://0.0.0.0:8080"
     respawn_delay = 5
     outgoing = True
@@ -21,5 +21,12 @@ There is a test server:
 # install dependencies
 npm i
 
+# start your webrtc server
 npm start
+
+# start a client to talk to
+nomadnet --config testn --rnsconfig testrns
+
+# start your regular client (should have PipeInterface config, above)
+nomadnet
 ```
