@@ -1,5 +1,7 @@
 This will eventually be it's own Interface (made in python) for reticulum, that allows WebRTC interfaces. For now, it's just a `PipeInterface`, so I can play with ideas in javascript.
 
+This is based on [this discussion](https://github.com/markqvist/Reticulum/discussions/877).
+
 ### config
 
 ```ini
