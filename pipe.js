@@ -1,18 +1,8 @@
-import WebSocket from 'ws'
+import WebSocket, { createWebSocketStream } from 'ws'
 
 const [, , URL = 'ws://0.0.0.0:8080'] = process.argv
-
 const ws = new WebSocket(URL)
-ws.on('error', console.error)
-
-ws.on('open', () => {
-  process.stdin.on('data', (data) => {
-    ws.send(data)
-  })
-})
-
-ws.on('message', (data) => {
-  process.stdout.write(data)
-})
-
-// TODO: actually figure what needs to be done. Currently anything on stdin is sent to all other clients
+const duplex = createWebSocketStream(ws)
+duplex.on('error', console.error)
+duplex.pipe(process.stdout)
+process.stdin.pipe(duplex)
