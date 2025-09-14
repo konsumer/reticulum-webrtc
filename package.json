@@ -1,0 +1,16 @@
+{
+  "name": "reticulum-webrtc",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "npx -y prettier -w ."
+  },
+  "keywords": [],
+  "author": "konsumer",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
