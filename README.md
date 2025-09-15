@@ -5,10 +5,10 @@ This is based on [this discussion](https://github.com/markqvist/Reticulum/discus
 ### config
 
 ```ini
-  [[Local WebRTC Tester]]
+  [[Konsumer WebRTC]]
     type = PipeInterface
     enabled = True
-    command = "node PATH_TO/reticulum-webrtc/pipe.js ws://0.0.0.0:8080"
+    command = "node PATH_TO/reticulum-webrtc/pipe.js wss://signal.konsumer.workers.dev/ws/reticulum"
     respawn_delay = 5
     outgoing = True
     mode = full
