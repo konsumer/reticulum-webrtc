@@ -1,4 +1,8 @@
-This will eventually be it's own Interface (made in python) for reticulum, that allows WebRTC interfaces. For now, it's just a `PipeInterface`, so I can play with ideas in javascript.
+> [!WARNING]
+> This was originally using a pipe interface to do websocket stuff, which introduces all kinds of weirdness (HLDC ISDN-style data-framing, for example.) I think a better path is to copy [WebsocketClientInterface](https://github.com/liamcottle/reticulum-meshchat/blob/master/src/backend/interfaces/WebsocketClientInterface.py) into your reticulum interfaces/ folder, and use that. I will still work on a web/js client for this, but it will be much cleaner.
+
+
+This is just a `PipeInterface` that does websockets, so I can play with ideas in javascript.
 
 This is based on [this discussion](https://github.com/markqvist/Reticulum/discussions/877).
 
